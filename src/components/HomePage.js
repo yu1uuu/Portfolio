@@ -9,12 +9,18 @@ const StyledHomePage = styled.main`
   text-align: center;
 `;
 
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+
 function HomePage() {
   return (
     <StyledHomePage>
       <section>
         <h2>Welcome!</h2>
-        <p>Hello, I'm Yulu Jiang. Welcome to my personal website. Here you can learn more about me, my projects, and how to contact me.</p>
+        <p>Hey! Welcome to Yulu's Engineering Portfolio. Here you can learn more about me, my projects, and lifestyle;) </p>
       </section>
     </StyledHomePage>
   );

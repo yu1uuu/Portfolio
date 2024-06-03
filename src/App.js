@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 
 function App() {
