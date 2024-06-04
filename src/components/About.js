@@ -1,20 +1,25 @@
 import React from "react";
+import styled from 'styled-components';
+
+// Styled component for the text section
+const TextSection = styled.div`
+  flex: 1; // Takes up the remaining space
+  padding: 20px 80px; // Padding to space out the text from the image
+  color: #7e9278; // Soft green text color
+`;
+
 
 function About() {
   return (
-    <div>
+    <TextSection>
 
-    <h2> uoft </h2>
+    <h2> Electrical & Computer Engineering </h2>
     <p>
-        Our mission is what drives us to do everything possible to expand
-        human potential. We do that by creating groundbreaking sport
-        innovations, by making our products more sustainably, by building a
-        creative and diverse global team and by making a positive impact in
-        communities where we live and work. Based in Beaverton, Oregon, NIKE,
-        Inc. includes the Nike, Converse, and Jordan brands.
+        Hi! My name is Yulu <i>/you-loo</i>; I was born in Shenzhen, China but have been living in Canada for more than half my life now.
+        
     </p>
  
-    </div>
+    </TextSection>
   );
 }
 

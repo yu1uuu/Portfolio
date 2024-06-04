@@ -2,7 +2,15 @@ import React from "react";
 // Remove if not using any specific styles from Header.css
 // import "../styles/Header.css";
 
-export default function Header() {
+const StyledHeader = styled.header`
+  background-color: #7e9278;
+  color: white;
+  padding: 10px;
+  text-align: center;
+`;
+
+function Header() {
+    
     return (
         <header className="Header">
             <nav className="Nav">
