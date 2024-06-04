@@ -1,40 +1,25 @@
+// Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav style={{
-      display: 'flex', 
-      justifyContent: 'space-evenly', 
-      alignItems: 'right', 
-      backgroundColor: '#f8f8f8', 
-      padding: '10px 20px', // Adds padding around the navigation bar
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)' // Adds a subtle shadow for a touch of depth
+      display: 'flex',
+      justifyContent: 'space-between', // This aligns items to the edges
+      alignItems: 'center',
+      backgroundColor: '#7e9278',
+      padding: '10px 50px',
+      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
     }}>
-      <a href="#Home" style={{
-        textDecoration: 'none', 
-        color: '#333', 
-        marginRight: '5px', 
-        fontWeight: 'bold'
-      }}>Home</a>
-      <a href="#About" style={{
-        textDecoration: 'none', 
-        color: '#333', 
-        marginRight: '5px', 
-        fontWeight: 'bold'
-      }}>About</a>
-      <a href="#" style={{
-        textDecoration: 'none', 
-        color: '#333', 
-        marginRight: '5px', 
-        fontWeight: 'bold'
-      }}>Paintings</a>
-      <a href="#contact" style={{
-        textDecoration: 'none', 
-        color: '#333', 
-        fontWeight: 'bold'
-      }}>Contact</a>
+      <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
+      <div style={{ display: 'flex' }}>
+        <Link to="/about" style={{ textDecoration: 'none', color: 'white', marginLeft: '30px' }}>About</Link>
+        <Link to="/paintings" style={{ textDecoration: 'none', color: 'white', margin: '0 30px' }}>Paintings</Link>
+        <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Contact</Link>
+      </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
