@@ -21,14 +21,14 @@ const PaintingSection = styled.div`
 // Styled component for the text section
 const TextSection = styled.div`
   flex: 1; // Takes up the remaining space
-  padding: 20px 80px; // Padding to space out the text from the image
-  color: #7e9278; // Soft green text color
+  padding: 20px 80px; 
+  color: #7e9278; 
 `;
 
 // Styled component for the image
 const StyledImage = styled.img`
-  width: 500px; // Fixed width for images
-  height: 350px; // Fixed height for images
+  width: 500px; 
+  height: 350px;
   object-fit: cover; // Ensures the image covers the defined area without distortion
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5); // Drop shadow for style
 `;
