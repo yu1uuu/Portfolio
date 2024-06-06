@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 // Define the styled component targeting an HTML element
 const StyledHomePage = styled.main`
-  background-color: #fffbf7; // Light green
-  color: #7e9278;
+  background-color: #101c10; // Light green
+  color: #bdd2c5;
   padding: 10px;
   text-align: center;
 `;
@@ -21,37 +21,36 @@ const GridContainer = styled.div`
 `;
 // Style for each grid item
 const GridItem = styled.div`
-  background-color: #333; // Provides a dark background, visible only if image doesn't cover
-  height: 250px; // Fixed height for each grid item
-  width: 100%; // Ensures the grid item takes full width given by grid template
+  background-color: #333; // Dark background for each grid item
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; // Critical to ensure images don't spill out
-  position: relative; // Allows absolute positioning within
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  overflow: hidden;
+  height: 300px; // Fixed height accommodating image and text
+  position: relative;
+  padding-bottom: 50px; 
+  border-radius: 10px;
 `;
 
 // Style for the image
 const StyledImage = styled.img`
-  width: 100%; // Ensures the image takes the full width of the GridItem
-  height: 100%; // Ensures the image takes the full height of the GridItem
-  object-fit: cover; // Ensures the image covers the area, cropping it if necessary
-  transition: transform 0.3s ease; // Adds a zoom effect on hover
-
-  &:hover {
-    transform: scale(1.1); // Scales the image up when hovered
-  }
+  width: 100%; // Ensures the image fills the width
+  flex-grow: 1; // Allows the image to fill the available space
+  object-fit: cover; // Ensures the image covers the area without distorting
 `;
-
 
 // Style for text below each grid item
 const ItemText = styled.div`
-  text-align: center; // Center the text below the image
-  padding: 10px; // Padding around the text
-  color: #fffbf7; // Set the text color
-  background: #7e9278; // Optional: a slight overlay background for text readability
-  width: 100%; // Ensures text container fills grid item width
+  text-align: center; // Center the text
+  color: #fff; // Text color
+  background: #7e9278; // Semi-transparent background for readability
+  width: 100%; // Match width to the grid item
+  position: absolute;
+  bottom: 0px; // Position text at the bottom of the grid item
+  padding: 10px 0; // Padding for the text
 `;
+
 function HomePage() {
   const projects = [
     { id: 1, name: 'Project 1', description: 'Description of Project 1', imagePath: '/flappy_bird.jpg' },
@@ -59,7 +58,7 @@ function HomePage() {
     { id: 3, name: 'Project 3', description: 'Description of Project 1', imagePath: '/sunset_beach.jpg' },
     { id: 4, name: 'Project 4', description: 'Description of Project 2', imagePath: '/path' },
     { id: 5, name: 'Project 5', description: 'Description of Project 1', imagePath: '/path' },
-    { id: 6, name: 'Project 6', description: 'Description of Project 2', imagePath: '/path' },
+    { id: 6, name: 'Project 6', description: 'Description of Project 2', imagePath: '/map.png' },
     // Additional projects...
   ];
 

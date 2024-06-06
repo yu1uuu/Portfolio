@@ -13,7 +13,7 @@ function About() {
   return (
     <TextSection>
 
-    <h2> Electrical & Computer Engineering </h2>
+    <h2> Electrical & Computer Engineering Student</h2>
     <p>
         Hi! My name is Yulu <i>/you-loo</i>; I was born in Shenzhen, China but have been living in Canada for more than half my life now.
         
