@@ -7,7 +7,6 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 
-
 const ContactPage = () => {
     const form = useRef();
     const [sendStatus, setSendStatus] = useState("");
@@ -36,6 +35,7 @@ const ContactPage = () => {
   
   
   return (
+    //<StyledContactPage>
     <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto', textAlign: 'center', color: '#7e9278' }}>
       <h1>Let's Get in Touch</h1>
       <p>Shoot me a message through: <a href="mailto:yulu.jiang@mail.utoronto.ca" style={{ textDecoration: 'none' }}>yulu.jiang@mail.utoronto.ca</a></p>
@@ -77,18 +77,25 @@ const ContactPage = () => {
         
       </section>
     </div>
+    //</StyledContactPage>
   );
 };
 
 export default ContactPage;
 
+// change background color
+const StyledContactPage = styled.main`
+  background-color: #101c10; // Light green
+`;
+
 
 const StyledContactForm = styled.div`
   width: 400px;
+  margin: auto;  // Centers the form horizontally
 
   form {
     display: flex;
-    align-items: flex-start;
+    align-items: center;  // Aligns form items to the center vertically
     flex-direction: column;
     width: 100%;
     font-size: 16px;
@@ -132,6 +139,11 @@ const StyledContactForm = styled.div`
       background: #7e9278;
       color: white;
       border: none;
+      transition: background 0.3s; // Smooth transition for background change
+
+      &:hover {
+        background: #5a6f64;  // Changes background color on hover
+      }
     }
   }
 `;
