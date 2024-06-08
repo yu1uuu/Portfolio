@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 // Define the styled component targeting an HTML element
 const StyledHomePage = styled.main`
-  background-color: #101c10; // Light green
+  background-color: #101810; // Light green
   color: #bdd2c5;
   padding: 10px;
   text-align: center;

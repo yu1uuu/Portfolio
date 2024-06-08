@@ -6,7 +6,7 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column; // Ensures vertical layout
   padding: 10px;
-  background-color: #f4f4f4; // Light gray background
+  background-color: #101810; // Light gray background
 `;
 
 // Styled component for each painting section
@@ -54,6 +54,7 @@ function Paintings() {
         </PaintingSection>
       ))}
     </ContentContainer>
+
   );
 }
 
