@@ -35,11 +35,11 @@ const StyledImage = styled.img`
 
 function Paintings() {
   const paintings = [
-    { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. This is when I fell in love with painting snow.', imagePath: '/winter_fantasy.jpeg' },
-    { title: 'Golden Waves', description: 'A vibrant depiction of a summer scene, full of life and color.', imagePath: '/sunset_beach.jpg' },
-    { title: 'Daisy Beach', description: 'The mysteries of autumn captured in shades of orange and brown.', imagePath: '/daisy_beach.jpg' },
-    { title: 'Snowy Village', description: 'The fresh feeling of spring beautifully represented through blossoming flowers.', imagePath: '/snowy_village.jpg' },
-    { title: 'Mountain Town', description: 'Starry night and the tranquility it brings, painted on canvas.', imagePath: '/mountain_town.jpg' }
+    { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. This was a birthday gift for my mom, also marking the time where I fell in love with painting snow.', imagePath: '/winter_fantasy.jpeg' },
+    { title: 'Golden Waves', description: 'Something about the dynamity of waves even in a static image have always intrigued me deeply. Here I referenced another painting and compared the two.', imagePath: '/sunset_beach.jpg' },
+    { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves: daisies, the painting came to be.', imagePath: '/daisy_beach.jpg' },
+    { title: 'Snowy Village', description: 'Soemthing about this image mesmerizes me til this day, each stroke of the snowy mountains were insaenly healing to me.', imagePath: '/snowy_village.jpg' },
+    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. Sunset in this small town is absolutely gorgesous', imagePath: '/mountain_town.jpg' }
   ];
 
   return (
