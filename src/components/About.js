@@ -22,7 +22,7 @@ function About() {
         Hi! My name is Yulu <i>/you-loo</i>; I've been playing tennis since I was 8, I'm an enormous bookworm, 
         and I possess a curiosity for everything that drives me to continuously learn and explore new things.
     </p>
-    <p>THe majority of my experiences are in the field of autonomous vehicles</p>
+    <p>The majority of my experiences are in the field of autonomous vehicles</p>
  
     </TextSection>
     </StyledAbout>
