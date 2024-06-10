@@ -27,7 +27,7 @@ const GridItem = styled.div`
   justify-content: start;
   align-items: start;
   overflow: hidden;
-  height: 300px; // Fixed height accommodating image and text
+  height: 310px; // Fixed height accommodating image and text
   position: relative;
   padding-bottom: 50px; 
   border-radius: 10px;
@@ -48,17 +48,17 @@ const ItemText = styled.div`
   width: 100%; // Match width to the grid item
   position: absolute;
   bottom: 0px; // Position text at the bottom of the grid item
-  padding: 10px 0; // Padding for the text
+  padding: 6px 0; // Padding for the text
 `;
 
 function HomePage() {
   const projects = [
-    { id: 1, name: 'Project 1', description: 'Description of Project 1', imagePath: '/flappy_bird.jpg' },
-    { id: 2, name: 'Project 2', description: 'Description of Project 2', imagePath: '/klotski.png' },
-    { id: 3, name: 'Project 3', description: 'Description of Project 1', imagePath: '/sunset_beach.jpg' },
-    { id: 4, name: 'Project 4', description: 'Description of Project 2', imagePath: '/path' },
-    { id: 5, name: 'Project 5', description: 'Description of Project 1', imagePath: '/path' },
-    { id: 6, name: 'Project 6', description: 'Description of Project 2', imagePath: '/map.png' },
+    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: '/flappy_bird.jpg' },
+    { id: 2, name: 'Klotski', description: 'Sliding block game using embedded C, PS2 keyboard, FPGA board and VGA display', imagePath: '/klotski.png' },
+    { id: 3, name: 'EcoNibbles', description: 'Web application that estimate the carbon emission from food images using machine learning    ', imagePath: '/econibbles.jpeg' },
+    { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/map.png' },
+    { id: 5, name: 'Neurosurf', description: 'Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood  ', imagePath: '/neurosurf.png' },
+    { id: 6, name: 'Flappy Bird', description: 'An interactive game of Flappy bird using Verilog, FPGA board, and the VGA display', imagePath: '/flappy_bird.jpg' },
     // Additional projects...
   ];
 
