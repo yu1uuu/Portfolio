@@ -6,15 +6,16 @@ import { Link } from 'react-router-dom';
 const StyledHomePage = styled.main`
   background-color: #101810; // Light green
   color: #bdd2c5;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
+  padding-bottom: 60px;
 `;
 
 // Style for the grid container
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr); // Creates a three-column layout
-  gap: 20px; // Space between grid items
+  gap: 25px; // Space between grid items
   padding: 20px;
   margin-right: 80px;
   margin-left: 80px;
