@@ -17,8 +17,8 @@ function Project1() {
     <StyledProject1>
     <TextSection>
     <div className="project-details">
-      <h1>Project 1</h1>
-      <p>This is the detail page for Project 1. Here, you can find comprehensive information about the project.</p>
+      <h1>Cone Map</h1>
+      <p>As the mapping lead of the driverless section of University of Toronto's formula racing team, we work to produce a cone map</p>
       <section>
         <h2>Project Description</h2>
         <p>Provide a detailed description of what the project entails, its scope, and its objectives.</p>
