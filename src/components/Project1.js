@@ -18,7 +18,9 @@ function Project1() {
     <TextSection>
     <div className="project-details">
       <h1>Cone Map</h1>
-      <p>As the mapping lead of the driverless section of University of Toronto's formula racing team, my team and I work to produce a cone map</p>
+      <p>As the mapping lead of the driverless section of University of Toronto's formula racing team, my team and I work to produce a cone map that informs
+        our path planning algorithms of the vehicle and obstables whereabouts
+      </p>
 
       <section>
         <h2>Technical Information</h2>
@@ -34,10 +36,6 @@ function Project1() {
           it publishes the cone map and the updated pose
           </li>
         </ul>
-      </section>
-      <section>
-        <h2>Conclusion and Future Work</h2>
-        <p>Talk about the project outcomes, results, and future enhancements or expansions planned.</p>
       </section>
     </div>
     </TextSection>

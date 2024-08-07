@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+
 // Define the styled component targeting an HTML element
 const StyledHomePage = styled.main`
   background-color: #101810; // Light green
@@ -54,7 +55,7 @@ const ItemText = styled.div`
 
 function HomePage() {
   const projects = [
-    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: '/flappy_bird.jpg' },
+    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: '/cone_map.png' },
     { id: 2, name: 'Klotski', description: 'Sliding block game using embedded C, PS2 keyboard, FPGA board and VGA display', imagePath: '/klotski.png' },
     { id: 3, name: 'EcoNibbles', description: 'Web application that estimate the carbon emission from food images using machine learning    ', imagePath: '/econibbles.jpeg' },
     { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/map.png' },
