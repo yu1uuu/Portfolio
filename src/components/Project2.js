@@ -31,11 +31,10 @@ function Project2() {
       <Content>
         <Heading>Project 2: Klotski</Heading>
         <Paragraph>
-          This project details page describes Klotski, a sliding block game developed using embedded C, a PS2 keyboard, an FPGA board, and a VGA display. The project demonstrates practical applications of hardware programming and real-time interaction handling in gaming.
+          This project details page describes Klotski, a sliding block game developed using embedded C, a PS2 keyboard, an FPGA board, and a VGA display. 
+          The project demonstrates practical applications of hardware programming and real-time interaction handling in gaming.
         </Paragraph>
-        <Paragraph>
-          Further details could include technical challenges faced, the development process, and enhancements or modifications to the original game concept. This can provide insight into the complexity involved in hardware-based game design.
-        </Paragraph>
+   
       </Content>
     </StyledProjectPage>
   );
