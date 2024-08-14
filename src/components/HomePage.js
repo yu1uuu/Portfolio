@@ -55,7 +55,7 @@ const ItemText = styled.div`
 
 function HomePage() {
   const projects = [
-    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: '/docs/cone_map.png' },
+    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: '/Portfolio/docs/cone_map.png' },
     { id: 2, name: 'Klotski', description: 'Sliding block game using embedded C, PS2 keyboard, FPGA board and VGA display', imagePath: '/docs/klotski.png' },
     { id: 3, name: 'EcoNibbles', description: 'Web application that estimate the carbon emission from food images using machine learning    ', imagePath: '/docs/econibbles.jpeg' },
     { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/docs/map.png' },
