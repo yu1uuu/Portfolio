@@ -38,7 +38,7 @@ function Paintings() {
     { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. This was a birthday gift for my mom, also marking the time where I fell in love with painting snow.', imagePath: './winter_fantasy.jpeg' },
     { title: 'Golden Waves', description: 'Something about the dynamity of waves even in a static image have always intrigued me deeply. Here I referenced another painting and compared the two.', imagePath: '/Portfolio/sunset_beach.jpg' },
     { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves: daisies, the painting came to be.', imagePath: 'https://raw.githubusercontent.com/yu1uuu/Portfolio/main/docs/daisy_beach.jpg' },
-    { title: 'Snowy Village', description: 'Soemthing about this image mesmerizes me til this day, each stroke of the snowy mountains were insaenly healing to me.', imagePath: 'snowy_village.jpg' },
+    { title: 'Snowy Village', description: 'Soemthing about this image mesmerizes me til this day, each stroke of the snowy mountains were insaenly healing to me.', imagePath: 'main/docs/snowy_village.jpg' },
     { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. Sunset in this small town is absolutely gorgesous', imagePath: 'mountain_town.jpg' }
   ];
 
