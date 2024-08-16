@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import styled from 'styled-components';
 
 // Styled component for the container
@@ -55,6 +55,33 @@ function Paintings() {
       ))}
     </ContentContainer>
 
+  );
+}
+
+export default Paintings;
+*/
+
+import React from 'react';
+import { Image } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function Paintings() {
+  const paintings = [
+    { title: 'Winter Fantasy', description: '...', imagePath: '/winter_fantasy.jpeg' },
+    { title: 'Golden Waves', description: '...', imagePath: '/sunset_beach.jpg' },
+    // ...other paintings
+  ];
+
+  return (
+    <div>
+      {paintings.map((painting, index) => (
+        <div key={index}>
+          <h1>{painting.title}</h1>
+          <p>{painting.description}</p>
+          <Image src={painting.imagePath} alt={painting.title} fluid rounded />
+        </div>
+      ))}
+    </div>
   );
 }
 
