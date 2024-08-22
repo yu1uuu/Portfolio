@@ -1,4 +1,4 @@
-/* import React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 // Styled component for the container
@@ -35,11 +35,11 @@ const StyledImage = styled.img`
 
 function Paintings() {
   const paintings = [
-    { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. This was a birthday gift for my mom, also marking the time where I fell in love with painting snow.', imagePath: './winter_fantasy.jpeg' },
-    { title: 'Golden Waves', description: 'Something about the dynamity of waves even in a static image have always intrigued me deeply. Here I referenced another painting and compared the two.', imagePath: '/Portfolio/sunset_beach.jpg' },
-    { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves: daisies, the painting came to be.', imagePath: 'https://raw.githubusercontent.com/yu1uuu/Portfolio/main/docs/daisy_beach.jpg' },
-    { title: 'Snowy Village', description: 'Soemthing about this image mesmerizes me til this day, each stroke of the snowy mountains were insaenly healing to me.', imagePath: 'main/docs/snowy_village.jpg' },
-    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. Sunset in this small town is absolutely gorgesous', imagePath: 'mountain_town.jpg' }
+    { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. This was a birthday gift for my mom, also marking the time where I fell in love with painting snow.', imagePath: '/winter_fantasy.jpeg' },
+    { title: 'Golden Waves', description: 'Something about the dynamity of waves even in a static image have always intrigued me deeply. Here I referenced another painting and compared the two.', imagePath: '/sunset_beach.jpg' },
+    { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves: daisies, the painting came to be.', imagePath: '/daisy_beach.jpg' },
+    { title: 'Snowy Village', description: 'Soemthing about this image mesmerizes me til this day, each stroke of the snowy mountains were insaenly healing to me.', imagePath: '/snowy_village.jpg' },
+    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. Sunset in this small town is absolutely gorgesous', imagePath: '/mountain_town.jpg' }
   ];
 
   return (
@@ -59,30 +59,6 @@ function Paintings() {
 }
 
 export default Paintings;
-*/
 
-import React from 'react';
-import { Image } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Paintings() {
-  const paintings = [
-    { title: 'Winter Fantasy', description: '...', imagePath: '/winter_fantasy.jpeg' },
-    { title: 'Golden Waves', description: '...', imagePath: '/sunset_beach.jpg' },
-    // ...other paintings
-  ];
 
-  return (
-    <div>
-      {paintings.map((painting, index) => (
-        <div key={index}>
-          <h1>{painting.title}</h1>
-          <p>{painting.description}</p>
-          <Image src={painting.imagePath} alt={painting.title} fluid rounded />
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Paintings;

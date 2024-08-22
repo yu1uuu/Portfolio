@@ -55,10 +55,10 @@ const ItemText = styled.div`
 
 function HomePage() {
   const projects = [
-    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: 'https://github.com/yu1uuu/Portfolio/blob/main/docs/cone_map.png' },
-    { id: 2, name: 'Klotski', description: 'Sliding block game using embedded C, PS2 keyboard, FPGA board and VGA display', imagePath: '../klotski.png' },
-    { id: 3, name: 'EcoNibbles', description: 'Web application that estimate the carbon emission from food images using machine learning    ', imagePath: './econibbles.jpeg' },
-    { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/docs/map.png' },
+    { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization usingGraphSlam, EKF, KD tree, for the driverless system ', imagePath: '/cone_map.png' },
+    { id: 2, name: 'Klotski', description: 'Sliding block game using embedded C, PS2 keyboard, FPGA board and VGA display', imagePath: '/klotski.png' },
+    { id: 3, name: 'EcoNibbles', description: 'Web application that estimate the carbon emission from food images using machine learning    ', imagePath: '/econibbles.jpeg' },
+    { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/map.png' },
     { id: 5, name: 'Neurosurf', description: 'Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood  ', imagePath: 'neurosurf.png' },
     { id: 6, name: 'Flappy Bird', description: 'An interactive game of Flappy bird using Verilog, FPGA board, and the VGA display', imagePath: 'flappy_bird.jpg' },
     // Additional projects...
