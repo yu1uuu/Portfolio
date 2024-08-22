@@ -15,8 +15,9 @@ const Navbar = () => {
       <Link to="/" style={{ textDecoration: 'none', color: 'white', fontSize: '20px' }}>Home</Link>
       <div style={{ display: 'flex' }}>
         <Link to="/about" style={{ textDecoration: 'none', color: 'white', marginLeft: '0px' , fontSize: '20px'}}>About</Link>
-        <Link to="/paintings" style={{ textDecoration: 'none', color: 'white', margin: '0 80px' , fontSize: '20px'}}>Paintings</Link>
-        <Link to="/contact" style={{ textDecoration: 'none', color: 'white',  marginLeft: '0 90px', fontSize: '20px' }}>Contact</Link>
+        <Link to="/experience" style={{ textDecoration: 'none', color: 'white',  marginLeft: '50px', fontSize: '20px' }}>Experiences</Link>
+        <Link to="/paintings" style={{ textDecoration: 'none', color: 'white', margin: '0 50px' , fontSize: '20px'}}>Paintings</Link>
+        <Link to="/contact" style={{ textDecoration: 'none', color: 'white',  marginLeft: '0 100px', fontSize: '20px' }}>Contact</Link>
       </div>
     </nav>
   );

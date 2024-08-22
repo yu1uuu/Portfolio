@@ -12,10 +12,10 @@ const StyledProjectPage = styled.main`
 function Project5() {
   return (
     <StyledProjectPage>
-      <h2>Neurosurf</h2>
-      <p>Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood.</p>
-      <img src='./neurosurf.png' alt='Neurosurf' style={{ width: '80%', borderRadius: '10px' }} />
-      <p>Neurosurf utilizes EEG data to analyze user mood in real-time, offering insights into mental well-being...</p>
+      <h2>EcoNibbles</h2>
+      <p>Web application that estimates the carbon emission from food images using machine learning.</p>
+      <img src='./econibbles.jpeg' alt='EcoNibbles' style={{ width: '80%', borderRadius: '10px' }} />
+      <p>This project focuses on estimating the environmental impact of food consumption using advanced image recognition and carbon footprint calculation algorithms...</p>
       {/* Add more detailed content about the project here */}
     </StyledProjectPage>
   );

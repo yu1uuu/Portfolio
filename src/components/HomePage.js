@@ -26,43 +26,64 @@ const GridContainer = styled.div`
   margin-left: 80px;
 `;
 
+const GridContainerEmbedded = styled(GridContainer)`
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Less width */
+  max-width: 700px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+`;
+
 const GridItem = styled.div`
   background-color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-end;
+  align-items: center;
   overflow: hidden;
-  height: 310px;
+  height: 200px; /* Adjusted height to create a landscape shape */
   position: relative;
-  padding-bottom: 50px; 
   border-radius: 10px;
+  width: 100%; /* Ensure it takes full width of the grid column */
 `;
 
 const StyledImage = styled.img`
   width: 100%;
-  flex-grow: 1;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire grid item without distortion */
+  object-position: center; /* Centers the image within the grid item */
 `;
 
 const ItemText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: #fff;
-  background: #7e9278;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for the text */
   width: 100%;
   position: absolute;
-  bottom: 0px;
-  padding: 6px 0;
+  bottom: 0;
+  height: 60px; /* Fixed height for consistency */
+  padding: 10px 0;
+`;
+
+const ItemHeading = styled.h3`
+  margin: 0;
+  font-size: 16px; /* Adjust font size as needed */
+`;
+
+const ItemDescription = styled.p`
+  margin: 0;
+  font-size: 12px; /* Adjust font size as needed */
 `;
 
 function HomePage() {
   const softwareProjects = [
     { id: 1, name: 'Cone Map', description: 'Generated a cone map from mapping and localization using GraphSlam, EKF, KD tree, for the driverless system', imagePath: '/cone_map.png' },
-    { id: 2, name: 'Heartbeat Monitor', description: 'Designed a convolutional neural network that identifies anomalies in cardiac heartbeat signals', imagePath: '/heartbeat.png' },
-    { id: 3, name: 'EcoNibbles', description: 'Web application that estimates the carbon emission from food images using machine learning', imagePath: '/econibbles.jpeg' },
+    { id: 2, name: 'ETG Commodities ML optimization', description: 'Optimizing commodity trading strategies using machine learning techniques', imagePath: './etg.jpeg' }, 
+    { id: 3, name: 'Heartbeat Monitor', description: 'Designed a convolutional neural network that identifies anomalies in cardiac heartbeat signals', imagePath: '/heartbeat.png' },
     { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/map.png' },
-    { id: 5, name: 'Neurosurf', description: 'Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood', imagePath: '/neurosurf.png' },
-    { id: 6, name: 'Project 6', description: 'Description of your sixth software project', imagePath: './project6_image.png' }, // New software project
+    { id: 5, name: 'EcoNibbles', description: 'Web application that estimates the carbon emission from food images using machine learning', imagePath: '/econibbles.jpeg' },
+    { id: 6, name: 'Neurosurf', description: 'Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood', imagePath: '/neurosurf.png' }
   ];
 
   const embeddedProjects = [
@@ -84,8 +105,8 @@ function HomePage() {
             <Link to={`/project${project.id}`} style={{ textDecoration: 'none' }}>
               <StyledImage src={project.imagePath} alt={project.name} />
               <ItemText>
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
+                <ItemHeading>{project.name}</ItemHeading>
+                <ItemDescription>{project.description}</ItemDescription>
               </ItemText>
             </Link>
           </GridItem>
@@ -93,19 +114,19 @@ function HomePage() {
       </GridContainer>
 
       <SectionTitle>Embedded Software</SectionTitle>
-      <GridContainer>
+      <GridContainerEmbedded>
         {embeddedProjects.map(project => (
           <GridItem key={project.id}>
             <Link to={`/project${project.id}`} style={{ textDecoration: 'none' }}>
               <StyledImage src={project.imagePath} alt={project.name} />
               <ItemText>
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
+                <ItemHeading>{project.name}</ItemHeading>
+                <ItemDescription>{project.description}</ItemDescription>
               </ItemText>
             </Link>
           </GridItem>
         ))}
-      </GridContainer>
+      </GridContainerEmbedded>
     </StyledHomePage>
   );
 }

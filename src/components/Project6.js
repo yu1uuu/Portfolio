@@ -12,10 +12,10 @@ const StyledProjectPage = styled.main`
 function Project6() {
   return (
     <StyledProjectPage>
-      <h2>Flappy Bird</h2>
-      <p>An interactive game of Flappy Bird using Verilog, FPGA board, and VGA display.</p>
-      <img src='./flappy_bird.jpg' alt='Flappy Bird' style={{ width: '80%', borderRadius: '10px' }} />
-      <p>This project implements the popular game Flappy Bird using hardware description language (Verilog) and FPGA technology...</p>
+      <h2>Neurosurf</h2>
+      <p>Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood.</p>
+      <img src='./neurosurf.png' alt='Neurosurf' style={{ width: '80%', borderRadius: '10px' }} />
+      <p>Neurosurf utilizes EEG data to analyze user mood in real-time, offering insights into mental well-being...</p>
       {/* Add more detailed content about the project here */}
     </StyledProjectPage>
   );

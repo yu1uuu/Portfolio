@@ -1,43 +1,30 @@
-// In src/components/Project2.js
 import React from 'react';
 import styled from 'styled-components';
 
-// Define the styled component targeting an HTML element
 const StyledProjectPage = styled.main`
-  background-color: #101810; // Light green
+  background-color: #101810;
   color: #bdd2c5;
   padding: 20px;
   text-align: center;
+  padding-bottom: 60px;
 `;
 
-const Content = styled.div`
-  margin: 50px auto;
-  max-width: 600px; // Limit the width of the content for better readability
-`;
-
-const Heading = styled.h1`
-  font-size: 24px; // Larger text for the project title
+const ProjectImage = styled.img`
+  width: 80%;
+  border-radius: 10px;
   margin-bottom: 20px;
 `;
 
-const Paragraph = styled.p`
-  font-size: 16px;
-  line-height: 1.6; // More readable line spacing
-`;
-
-function Project2() {
+const Project2 = () => {
   return (
     <StyledProjectPage>
-      <Content>
-        <Heading>Project 2: Klotski</Heading>
-        <Paragraph>
-          This project details page describes Klotski, a sliding block game developed using embedded C, a PS2 keyboard, an FPGA board, and a VGA display. 
-          The project demonstrates practical applications of hardware programming and real-time interaction handling in gaming.
-        </Paragraph>
-   
-      </Content>
+      <h2>ETG Commodities ML Optimization</h2>
+      <ProjectImage src="./project6_image.png" alt="ETG Commodities ML Optimization" />
+      <p>This project focuses on optimizing commodity trading strategies using machine learning techniques. The ETG Commodities ML Optimization project involves analyzing large datasets to predict market trends and optimize trading decisions.</p>
+      <p>The main objectives of this project are to enhance trading efficiency, reduce risks, and increase profitability by leveraging advanced machine learning models...</p>
+      {/* Add more detailed content about the project here */}
     </StyledProjectPage>
   );
-}
+};
 
 export default Project2;
