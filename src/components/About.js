@@ -22,8 +22,8 @@ const TextSection = styled.div`
 `;
 
 const StyledAbout = styled.main`
-  background-color: #101810; // Light green
-  display: flex; // Uses flexbox for layout
+  background-color: #041202; 
+  display: flex; 
 `;
 
 function About() {

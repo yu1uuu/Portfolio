@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const StyledHomePage = styled.main`
-  background-color: #101810; /* Dark green background */
+  background-color: #041202; /* Dark green background */
   color: #bdd2c5;
   padding: 20px;
   text-align: center;
   padding-bottom: 60px;
+  padding-top: 80px; 
+  #margin-top: 80px; 
 `;
 
 const SectionTitle = styled.h2`
