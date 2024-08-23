@@ -41,7 +41,7 @@ const GridItem = styled.div`
   justify-content: flex-end;
   align-items: center;
   overflow: hidden;
-  height: 200px; /* Adjusted height to create a landscape shape */
+  height: 240px; /* Adjusted height to create a landscape shape */
   position: relative;
   border-radius: 10px;
   width: 100%; /* Ensure it takes full width of the grid column */

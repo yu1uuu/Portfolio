@@ -24,6 +24,7 @@ const TextSection = styled.div`
 const StyledAbout = styled.main`
   background-color: #041202; 
   display: flex; 
+  min-height: 100vh;
 `;
 
 function About() {
