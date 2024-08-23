@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-// Styled component for the container
 const GalleryContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,7 +12,7 @@ const GalleryContainer = styled.div`
   position: relative;
 `;
 
-// Styled component for the image container with buttons
+//  image container with buttons
 const ImageContainer = styled.div`
   display: flex;
   align-items: center;
@@ -51,7 +50,7 @@ const NavButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  ${({ left }) => (left ? 'left: -35px;' : 'right: -35px;')} // Adjust the position of the buttons
+  ${({ left }) => (left ? 'left: -35px;' : 'right: -35px;')} 
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
   &:hover {
@@ -61,11 +60,11 @@ const NavButton = styled.button`
 
 function Paintings() {
   const paintings = [
-    { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. This was a birthday gift for my mom, also marking the time where I fell in love with painting snow.', imagePath: '/winter_fantasy.jpeg' },
-    { title: 'Sunset Waves', description: 'Something about the dynamity of waves even in a static image have always intrigued me deeply. Here I referenced another painting and compared the two.', imagePath: '/sunset_beach.jpg' },
-    { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves: daisies, the painting came to be.', imagePath: '/daisy_beach.jpg' },
-    { title: 'Snowy Village', description: 'Something about this image mesmerizes me til this day, each stroke of the snowy mountains were insanely healing to me.', imagePath: '/snowy_village.jpg' },
-    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. Sunset in this small town is absolutely gorgeous.', imagePath: '/mountain_town.jpg' }
+    { title: 'Winter Fantasy', description: 'My first real attempt at painting after stopping art lessons in grade 7. A heartfelt birthday gift for my mom, marking the time where I fell in love with painting snow.', imagePath: '/winter_fantasy.jpeg' },
+    { title: 'Sunset Waves', description: 'Something about the dynamity of waves intrigues me deeply. Here I referenced a painting I love.', imagePath: '/sunset_beach.jpg' },
+    { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves.', imagePath: '/daisy_beach.jpg' },
+    { title: 'Snowy Village', description: 'Something about this image mesmerized me, a healing expereince.', imagePath: '/snowy_village.jpg' },
+    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. A vacation in this small town would be beautiful.', imagePath: '/mountain_town.jpg' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

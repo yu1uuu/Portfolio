@@ -37,7 +37,14 @@ const ContactPage = () => {
   
   return (
     <StyledContactPage>
-    <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto', textAlign: 'center', color: '#7e9278' }}>
+    <div style={{ 
+      padding: '20px', 
+      maxWidth: '600px', 
+      margin: 'auto', 
+      textAlign: 'center', 
+      color: '#7e9278',
+      paddingTop: '80px'
+      }}>
       <h1>Let's Get in Touch</h1>
       <p>Shoot me a message through: <a href="mailto:yulu.jiang@mail.utoronto.ca" style={{ textDecoration: 'none' }}>yulu.jiang@mail.utoronto.ca</a></p>
       <p>Or my personal email: <a href="mailto:yulujiang00@gmail.com" style={{ textDecoration: 'none' }}>yulujiang00@gmail.com</a></p>

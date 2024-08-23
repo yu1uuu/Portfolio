@@ -8,6 +8,7 @@ const StyledExperiencesPage = styled.main`
   color: #bdd2c5;
   padding: 40px 20px;
   text-align: center;
+  padding-top: 80px; 
 `;
 
 const Timeline = styled.div`
