@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav style={{
-      position: 'fixed', // Makes the navbar overlap the content and stay at the top
+      position: 'fixed', 
       top: 0,
       left: 0,
       right: 0,
-      zIndex: 1000, // Ensures the navbar stays on top of other content
+      zIndex: 1000,
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
