@@ -64,18 +64,18 @@ const ItemText = styled.div`
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 60px; /* Fixed height for consistency */
+  height: 60px; 
   padding: 10px 0;
 `;
 
 const ItemHeading = styled.h3`
   margin: 0;
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 16px; 
 `;
 
 const ItemDescription = styled.p`
   margin: 0;
-  font-size: 12px; /* Adjust font size as needed */
+  font-size: 12px; 
 `;
 
 function HomePage() {

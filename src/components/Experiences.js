@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaCalendarAlt } from 'react-icons/fa';
+import Skills from './Skills';
 
 const StyledExperiencesPage = styled.main`
   background-color: #041202;
@@ -145,8 +146,9 @@ const Experiences = () => {
           </ExperienceDetails>
           <TimelineCircle />
         </TimelineItem>
-        
       </Timeline>
+      {/* Render the Skills section below the timeline */}
+      <Skills />
     </StyledExperiencesPage>
   );
 };
