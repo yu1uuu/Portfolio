@@ -36,14 +36,18 @@ function About() {
       <TextSection>
         <h2>About</h2>
         <p>
-          Hi! My name is Yulu <i>/you-loo</i>; I'm an enormous bookworm with a curiosity for everything, driving me to continuously learn and explore new things.
+          Hi! My name is Yulu <i>/you-loo</i>; A Electrical and Computer Engineering student at the Univeristy of Toronto. 
+          I'm an enormous bookworm with a curiosity for everything, driving me to continuously learn and explore new things.
         </p>
         <p>
           Intrigued by the concepts behind autonomous driving, I joined the driverless section of the University of Toronto's formula racing team, where I quickly immersed myself in learning all I could about the mapping section, becoming the lead in my third year. To further expand my knowledge, I am currently pursuing a research opportunity concerning lane detection using unsupervised machine learning.
         </p>
         <p>
-          In addition to my work in autonomous vehicles, I am working on a research project in ai, focusing on detecting the use of AI like ChatGPT in published papers. I have also developed an interest in front-end development recently, as it provides immediate tangible results. 
-          My goal is to push the boundaries and explore new technologies in the field of SWE. I am always looking for opportunities to learn. Feel free to contact me, I'd love to chat!.
+          In addition to my work in autonomous vehicles, I am working on a research project, focusing on detecting the use of AI like ChatGPT in published papers. I have also developed an interest in front-end development recently, as there is immense satisfaction in immediate tangible results. 
+           </p>
+        <p>
+        My goal is to push the boundaries and explore new technologies in the field of SWE. I am always looking for opportunities to learn. Feel free to contact me, I'd love to chat!.
+    
         </p>
       </TextSection>
     </StyledAbout>
