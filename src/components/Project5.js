@@ -48,7 +48,7 @@ function Project5() {
       <p>Web application that estimates the carbon emission from food images using machine learning.</p>
       <img src='./econibbles.jpeg' alt='EcoNibbles' style={{ width: '40%', borderRadius: '10px' }} />
       <p>This project focuses on estimating the environmental impact of food consumption using advanced image recognition and carbon footprint calculation algorithms...</p>
-      <GithubButton href="https://github.com/yu1uuu/etg" target="_blank" rel="noopener noreferrer">
+      <GithubButton href="https://github.com/Miekale/NewHacks2023" target="_blank" rel="noopener noreferrer">
           <GithubIcon />
           View GitHub
         </GithubButton>

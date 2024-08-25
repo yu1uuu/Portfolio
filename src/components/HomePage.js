@@ -9,7 +9,6 @@ const StyledHomePage = styled.main`
   text-align: center;
   padding-bottom: 60px;
   padding-top: 80px; 
-  #margin-top: 80px; 
 `;
 
 const SectionTitle = styled.h2`
@@ -20,9 +19,9 @@ const SectionTitle = styled.h2`
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures items are centered */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  justify-content: center; /* Centers the items in the grid */
+  justify-content: center;
   padding: 20px;
   margin-right: 80px;
   margin-left: 80px;
@@ -45,13 +44,24 @@ const GridItem = styled.div`
   position: relative;
   border-radius: 10px;
   width: 100%; /* Ensure it takes full width of the grid column */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
+  &:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
 `;
 
 const StyledImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire grid item without distortion */
+  object-fit: cover; 
   object-position: center; /* Centers the image within the grid item */
+  transition: filter 0.3s ease; /* Smooth transition for brightness */
+
+  ${GridItem}:hover & {
+    filter: brightness(1.2); /* Brighten the image on hover */
+  }
 `;
 
 const ItemText = styled.div`
@@ -60,7 +70,7 @@ const ItemText = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for the text */
+  background: rgba(0, 0, 0, 0.7); 
   width: 100%;
   position: absolute;
   bottom: 0;

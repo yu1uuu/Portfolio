@@ -53,7 +53,10 @@ const Project3 = () => {
       <TextSection>
       <h2>Heartbeat Monitor</h2>
      
-      <p>The Heartbeat Monitor project involves designing a convolutional neural network (CNN) to identify anomalies in cardiac heartbeat signals. This project aims to improve early detection of heart conditions by analyzing ECG data...</p>
+      <p>The Heartbeat Monitor involves designing a convolutional neural network (CNN) to identify anomalies in cardiac heartbeat signals. 
+        It takes in an audio input of heartbeat signals, where data processing is used to convert the sounds into electrocardiograms (ECG).
+        The model then uses filters to extract features of the diagram, identifies the patterns, then outputs a binary classification of irregular or normal heartbeat.
+        This project aims to improve early detection of heart conditions by analyzing heartbeat data </p>
       <p>The system processes raw ECG data, applies filters, and uses machine learning to classify heartbeats into normal and abnormal categories. The results are visualized to help clinicians make informed decisions...</p>
       <GithubButton href="https://github.com/yu1uuu/Audio-Heartbeat-Monitor" target="_blank" rel="noopener noreferrer">
           <GithubIcon />
