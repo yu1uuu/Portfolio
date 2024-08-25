@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -16,27 +15,44 @@ import Project5 from './components/Project5';
 import Project6 from './components/Project6';
 import Project7 from './components/Project7';
 import Project8 from './components/Project8';
+import styled from 'styled-components';
+
+// Container that ensures the footer stays at the bottom
+const PageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+// Content wrapper that pushes the footer down
+const ContentWrap = styled.div`
+  flex: 1;
+`;
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/paintings" element={<PaintingsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/experience" element={<ExperiencePage />} />
-        <Route path="/project1" element={<Project1 />} />
-        <Route path="/project2" element={<Project2 />} />
-        <Route path="/project3" element={<Project3 />} />
-        <Route path="/project4" element={<Project4 />} />
-        <Route path="/project5" element={<Project5 />} />
-        <Route path="/project6" element={<Project6 />} />
-        <Route path="/project7" element={<Project7 />} />
-        <Route path="/project8" element={<Project8 />} />
-      </Routes>
-      <Footer />
+      <PageContainer>
+        <Navbar />
+        <ContentWrap>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/paintings" element={<PaintingsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/project1" element={<Project1 />} />
+            <Route path="/project2" element={<Project2 />} />
+            <Route path="/project3" element={<Project3 />} />
+            <Route path="/project4" element={<Project4 />} />
+            <Route path="/project5" element={<Project5 />} />
+            <Route path="/project6" element={<Project6 />} />
+            <Route path="/project7" element={<Project7 />} />
+            <Route path="/project8" element={<Project8 />} />
+          </Routes>
+        </ContentWrap>
+        <Footer />
+      </PageContainer>
     </Router>
   );
 }
