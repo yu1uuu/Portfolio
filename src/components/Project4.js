@@ -27,7 +27,7 @@ const ImageContainer = styled.div`
 const StyledImage = styled.img`
   width: 30%;
   border-radius: 8px;
-   margin-right: 30px;
+  margin-right: 30px;
 `;
 
 

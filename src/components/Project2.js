@@ -16,11 +16,7 @@ const TextSection = styled.div`
   padding-top: 80px; 
 `;
 
-const ProjectImage = styled.img`
-  width: 80%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-`;
+
 
 const Project2 = () => {
   return (
