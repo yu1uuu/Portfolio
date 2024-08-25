@@ -12,7 +12,6 @@ const GalleryContainer = styled.div`
   position: relative;
 `;
 
-//  image container with buttons
 const ImageContainer = styled.div`
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@ const ImageContainer = styled.div`
   position: relative;
 `;
 
-// Styled component for the image
 const StyledImage = styled.img`
   width: 700px;
   height: 500px;
@@ -39,7 +37,6 @@ const TextSection = styled.div`
   margin-right: 330px;
 `;
 
-// Styled component for the buttons
 const NavButton = styled.button`
   background-color: rgba(126, 146, 120, 0.8);
   color: #fff;
@@ -82,6 +79,9 @@ function Paintings() {
   return (
     <GalleryContainer>
       <TextSection>
+     
+      <p>A little section for my hobby, hope you like it ;)</p>
+
         <h1>{currentPainting.title}</h1>
       </TextSection>
       <ImageContainer>

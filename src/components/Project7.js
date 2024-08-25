@@ -64,7 +64,7 @@ function Project7() {
         <Heading>Project 2: Klotski</Heading>
         <Paragraph>
           Klotski is a sliding block game developed using embedded C. Use can control and move the pieces on the VGA display using a PS2 keyboard. 
-          The project demonstrates practical applications of hardware programming and real-time interaction handling in gaming.
+          The project demonstrates practical applications of hardware programming and leverages the FPGA board, PS2 keyboard for user input, and VGA for output display
         </Paragraph>
    
       </Content>

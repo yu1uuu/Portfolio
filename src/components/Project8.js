@@ -47,7 +47,8 @@ function Project8() {
       <h2>Flappy Bird</h2>
       <p>An interactive game of Flappy Bird using Verilog, FPGA board, and VGA display.</p>
       <img src='./flappy_bird.jpg' alt='Flappy Bird' style={{ width: '40%', borderRadius: '10px' }} />
-      <p>This project implements the popular game Flappy Bird using hardware description language (Verilog) and FPGA technology...</p>
+      <p>This project implements the popular game Flappy Bird using Verilog, leveraging FPGA keys, and the VGA display.
+      Utilized on chip memory, clock and reset characteristics, finite state machines, and data paths to provide a dynamic and visually pleasing user experience</p>
       <GithubButton href="https://github.com/yu1uuu/FlappyBird" target="_blank" rel="noopener noreferrer">
           <GithubIcon />
           View GitHub

@@ -47,7 +47,8 @@ function Project5() {
       <h2>EcoNibbles</h2>
       <p>Web application that estimates the carbon emission from food images using machine learning.</p>
       <img src='./econibbles.jpeg' alt='EcoNibbles' style={{ width: '40%', borderRadius: '10px' }} />
-      <p>This project focuses on estimating the environmental impact of food consumption using advanced image recognition and carbon footprint calculation algorithms...</p>
+      <p>Stemming from a two day hackathon, this project focuses on estimating the environmental impact of food consumption on a meal. 
+        Using image recognition, carbon footprint data from Open Food Facts API, transfer learning, and javascript and HTML for frontend web page.</p>
       <GithubButton href="https://github.com/Miekale/NewHacks2023" target="_blank" rel="noopener noreferrer">
           <GithubIcon />
           View GitHub

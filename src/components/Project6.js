@@ -47,7 +47,9 @@ function Project6() {
       <h2>Neurosurf</h2>
       <p>Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood.</p>
       <img src='./neurosurf.png' alt='Neurosurf' style={{ width: '40%', borderRadius: '10px' }} />
-      <p>Neurosurf utilizes EEG data to analyze user mood in real-time, offering insights into mental well-being...</p>
+      <p>Neurosurf utilizes EEG data to analyze user mood in real-time, offering insights into mental well-being of the user.
+        The program includes Fourier transform in Python to display real time brainwave data and an attention directing game where it directs user's focus level real time,
+      </p>
       <GithubButton href="https://github.com/aryanthomare/Neurosurf" target="_blank" rel="noopener noreferrer">
           <GithubIcon />
           View GitHub
