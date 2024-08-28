@@ -25,8 +25,24 @@ const StyledAbout = styled.main`
   background-color: #041202; 
   display: flex; 
   min-height: 100vh;
-`;
+  position: relative;
+  overflow: hidden;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100px; /* Adjust the position */
+    left: 520px; /* Adjust the position */
+    width: 1300px; /* Adjust the size */
+    height: 600px; /* Adjust the size */
+    background: url('/blob2.svg') no-repeat center center;
+    background-size: cover;
+    filter: blur(15px); /* Adds blur to the edges */
+    opacity: 0.2; /* Slightly transparent */
+    z-index: 1;
+  }
+`;
+ 
 function About() {
   return (
     <StyledAbout>
