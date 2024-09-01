@@ -43,7 +43,9 @@ const ContactPage = () => {
       margin: 'auto', 
       textAlign: 'center', 
       color: '#7e9278',
-      paddingTop: '80px'
+      paddingTop: '80px',
+      minHeight: '100vh',
+      position: 'relative'
       }}>
       <h1>Let's Get in Touch</h1>
       <p>Shoot me a message through: <a href="mailto:yulu.jiang@mail.utoronto.ca" style={{ textDecoration: 'none' }}>yulu.jiang@mail.utoronto.ca</a></p>
