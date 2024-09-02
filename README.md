@@ -1,4 +1,4 @@
-This are the code that composes my portfolio, check it out at [yulu's portfolio](yulujiang.pages.dev)!
+This are the code that composes my portfolio, check it out at [yulu's portfolio](https://yulujiang.pages.dev/)!
 
 # Getting Started with Create React App
 
