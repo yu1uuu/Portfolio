@@ -7,8 +7,9 @@ const StyledProjectPage = styled.main`
   background-color: #101810; /* Dark green background */
   display: flex;
   flex-direction: column;
-  height: 100vh; 
+  height: 120vh; 
   margin: 0; 
+  min-height: 120vh;
 `;
 
 const TextSection = styled.div`
@@ -25,6 +26,7 @@ const Content = styled.div`
   text-align: left;
   margin-left: 0;
   display: block;
+  flex-grow: 1;
 `;
 
 const Heading = styled.h1`
@@ -59,11 +61,6 @@ const GithubIcon = styled(FaGithub)`
   font-size: 20px;
 `;
 
-const Video = styled.video`
-  margin-top: 20px;
-  max-width: 100%; /* Ensures the video is responsive */
-  height: auto;
-`;
 
 function Project2() {
   return (
@@ -81,11 +78,17 @@ function Project2() {
             ensure real-time interaction.
           </Paragraph>
           
-          {/* Video embed */}
-          <Video controls>
-            <source src="/Users/yulujiang/yulu's_website/public/WS20.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </Video>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/M9HdbMhlPrM"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+
+
           
         </Content>
         <GithubButton href="https://github.com/yu1uuu/Klotski" target="_blank" rel="noopener noreferrer">
