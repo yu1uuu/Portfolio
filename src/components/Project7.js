@@ -12,25 +12,29 @@ const StyledProjectPage = styled.main`
 `;
 
 const TextSection = styled.div`
-  flex: 1; /* Takes up the remaining space */
-  padding: 20px 80px; /* Padding to space out the text from the image */
+  flex: 1; 
+  padding: 20px 80px; 
   color: #bdd2c5;
   padding-top: 80px; 
+  text-align: left; /* Align text to the left */
 `;
 
 const Content = styled.div`
-  margin: 50px auto;
-  max-width: 600px; // Limit the width of the content for better readability
+  margin: 50px 0;
+  max-width: 600px;
+  text-align: left;
+  margin-left: 0;
+  display: block;
 `;
 
 const Heading = styled.h1`
-  font-size: 24px; // Larger text for the project title
+  font-size: 24px; 
   margin-bottom: 20px;
 `;
 
 const Paragraph = styled.p`
   font-size: 16px;
-  line-height: 1.6; // More readable line spacing
+  line-height: 1.6; 
 `;
 
 const GithubButton = styled.a`
@@ -40,35 +44,51 @@ const GithubButton = styled.a`
   margin-top: 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #333; /* Dark button color */
+  background-color: #333;
   border-radius: 5px;
   text-decoration: none;
-  text-align: center;
   cursor: pointer;
 
   &:hover {
-    background-color: #555; /* Slightly lighter color on hover */
+    background-color: #555;
   }
 `;
 
 const GithubIcon = styled(FaGithub)`
-  margin-right: 8px; /* Space between the icon and text */
+  margin-right: 8px;
   font-size: 20px;
 `;
 
-function Project7() {
+const Video = styled.video`
+  margin-top: 20px;
+  max-width: 100%; /* Ensures the video is responsive */
+  height: auto;
+`;
+
+function Project2() {
   return (
     <StyledProjectPage>
       <TextSection>
-      <Content>
-        <Heading>Project 2: Klotski</Heading>
-        <Paragraph>
-          Klotski is a sliding block game developed using embedded C. Use can control and move the pieces on the VGA display using a PS2 keyboard. 
-          The project demonstrates practical applications of hardware programming and leverages the FPGA board, PS2 keyboard for user input, and VGA for output display
-        </Paragraph>
-   
-      </Content>
-      <GithubButton href="https://github.com/yu1uuu/Klotski" target="_blank" rel="noopener noreferrer">
+        <Content>
+          <Heading>Project 2: Klotski</Heading>
+          <Paragraph>
+            Klotski is a sliding block puzzle game developed in Embedded C, 
+            where users control block movements via a PS2 keyboard. The project 
+            runs on an FPGA, displaying the game on a VGA monitor. The game leverages 
+            hardware-level control, PS2 communication protocols, and VGA interfacing to 
+            provide smooth gameplay, demonstrating both digital systems and embedded software 
+            integration. The project required efficient management of hardware resources to 
+            ensure real-time interaction.
+          </Paragraph>
+          
+          {/* Video embed */}
+          <Video controls>
+            <source src="/Users/yulujiang/yulu's_website/public/WS20.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </Video>
+          
+        </Content>
+        <GithubButton href="https://github.com/yu1uuu/Klotski" target="_blank" rel="noopener noreferrer">
           <GithubIcon />
           View GitHub
         </GithubButton>
@@ -77,4 +97,4 @@ function Project7() {
   );
 }
 
-export default Project7;
+export default Project2;
