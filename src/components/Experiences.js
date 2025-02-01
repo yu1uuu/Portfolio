@@ -105,6 +105,17 @@ const Experiences = () => {
         </TimelineItem>
 
         <TimelineItem alignRight>
+          <ExperienceDetails>
+            <ExperienceTitle>ML Lane Detection Researcher</ExperienceTitle>
+            <ExperienceCompany>Toronto Robotics & AI Lab</ExperienceCompany>
+            <ExperienceDate>
+              <FaCalendarAlt /> 2024 - Present
+            </ExperienceDate>
+          </ExperienceDetails>
+          <TimelineCircle />
+        </TimelineItem>
+
+        <TimelineItem>
           <TimelineCircle />
           <ExperienceDetails alignRight>
             <ExperienceTitle>AI Researcher</ExperienceTitle>
@@ -115,18 +126,18 @@ const Experiences = () => {
           </ExperienceDetails>
         </TimelineItem>
 
-        <TimelineItem>
+        <TimelineItem alignRight>
           <ExperienceDetails>
             <ExperienceTitle>Mapping Lead</ExperienceTitle>
             <ExperienceCompany>UofT Formula Racing</ExperienceCompany>
             <ExperienceDate>
-              <FaCalendarAlt /> 2022 - Present
+              <FaCalendarAlt /> 2023 - Present
             </ExperienceDate>
           </ExperienceDetails>
           <TimelineCircle />
         </TimelineItem>
 
-        <TimelineItem alignRight>
+        <TimelineItem>
           <TimelineCircle />
           <ExperienceDetails alignRight>
             <ExperienceTitle>Mobility Innovation Lead</ExperienceTitle>
@@ -137,7 +148,7 @@ const Experiences = () => {
           </ExperienceDetails>
         </TimelineItem>
 
-        <TimelineItem>
+        <TimelineItem alignRight>
           <ExperienceDetails>
             <ExperienceTitle>Engineering Intern</ExperienceTitle>
             <ExperienceCompany>Supratec Membrane</ExperienceCompany>
