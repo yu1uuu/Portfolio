@@ -95,7 +95,8 @@ function HomePage() {
     { id: 3, name: 'Heartbeat Monitor', description: 'Designed a convolutional neural network that identifies anomalies in cardiac heartbeat signals', imagePath: '/heartbeat.png' },
     { id: 4, name: 'UNIverse', description: 'Mapping software with specific functions designed for university students', imagePath: '/map.png' },
     { id: 5, name: 'EcoNibbles', description: 'Web application that estimates the carbon emission from food images using machine learning', imagePath: '/econibbles.jpeg' },
-    { id: 6, name: 'Neurosurf', description: 'Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood', imagePath: '/neurosurf.png' }
+    { id: 6, name: 'Neurosurf', description: 'Uses the Muse 2 portable EEG headband to capture live brain waves from users and identify user mood', imagePath: '/neurosurf.png' },
+    { id: 9, name: 'Autolanes', description: 'Autonomous vehicle lane perception in winter conditions', imagePath: '/autolane.png' }
   ];
 
   const embeddedProjects = [

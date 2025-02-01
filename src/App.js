@@ -15,6 +15,7 @@ import Project5 from './components/Project5';
 import Project6 from './components/Project6';
 import Project7 from './components/Project7';
 import Project8 from './components/Project8';
+import Project9 from './components/Project9';
 import styled from 'styled-components';
 
 // Container that ensures the footer stays at the bottom
@@ -49,6 +50,7 @@ function App() {
             <Route path="/project6" element={<Project6 />} />
             <Route path="/project7" element={<Project7 />} />
             <Route path="/project8" element={<Project8 />} />
+            <Route path="/project9" element={<Project9 />} />
           </Routes>
         </ContentWrap>
         <Footer />
