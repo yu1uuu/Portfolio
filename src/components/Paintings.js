@@ -61,7 +61,8 @@ function Paintings() {
     { title: 'Sunset Waves', description: 'Something about the dynamity of waves intrigues me deeply. Here I referenced a painting I love.', imagePath: '/sunset_beach.jpg' },
     { title: 'Daisy Beach', description: 'Continuing my love of waves and the flower my mom loves.', imagePath: '/daisy_beach.jpg' },
     { title: 'Snowy Village', description: 'Something about this image mesmerized me, a healing expereince.', imagePath: '/snowy_village.jpg' },
-    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. A vacation in this small town would be beautiful.', imagePath: '/mountain_town.jpg' }
+    { title: 'Mountain Town', description: 'Other than snow and waves, I was looking for something different. A vacation in this small town would be beautiful.', imagePath: '/mountain_town.jpg' },
+    { title: 'Nostalgia', description: 'Dare I say my favorite one so far? Something about the peacecful scene with a touch of melancholy just makes me want to stare at it forever.', imagePath: '/nostalgia.jpg' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
