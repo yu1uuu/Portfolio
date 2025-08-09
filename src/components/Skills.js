@@ -78,7 +78,7 @@ const Skills = () => {
           </SkillItem>
           <SkillItem>
             <SkillIcon />
-            <SkillName>Javascript</SkillName>
+            <SkillName>Javascript/Typescript</SkillName>
             <SkillLevel>Advanced</SkillLevel>
           </SkillItem>
           <SkillItem>

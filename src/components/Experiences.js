@@ -93,12 +93,24 @@ const Experiences = () => {
     <StyledExperiencesPage>
       <h2>Experiences</h2>
       <Timeline>
+        
+      <TimelineItem alignRight>
+          <ExperienceDetails>
+            <ExperienceTitle>Software Developer</ExperienceTitle>
+            <ExperienceCompany>Blue J</ExperienceCompany>
+            <ExperienceDate>
+              <FaCalendarAlt /> 2025 - Present
+            </ExperienceDate>
+          </ExperienceDetails>
+          <TimelineCircle />
+        </TimelineItem>
+
         <TimelineItem>
           <ExperienceDetails>
             <ExperienceTitle>ML Developer & Cofounder</ExperienceTitle>
             <ExperienceCompany>Sequova Consulting Group</ExperienceCompany>
             <ExperienceDate>
-              <FaCalendarAlt /> 2024 - Present
+              <FaCalendarAlt /> 2024
             </ExperienceDate>
           </ExperienceDetails>
           <TimelineCircle />
@@ -109,7 +121,7 @@ const Experiences = () => {
             <ExperienceTitle>ML Lane Detection Researcher</ExperienceTitle>
             <ExperienceCompany>Toronto Robotics & AI Lab</ExperienceCompany>
             <ExperienceDate>
-              <FaCalendarAlt /> 2024 - Present
+              <FaCalendarAlt /> 2024 - 2025
             </ExperienceDate>
           </ExperienceDetails>
           <TimelineCircle />
@@ -119,7 +131,7 @@ const Experiences = () => {
           <TimelineCircle />
           <ExperienceDetails alignRight>
             <ExperienceTitle>AI Researcher</ExperienceTitle>
-            <ExperienceCompany>UTFR</ExperienceCompany>
+            <ExperienceCompany>Concordia University</ExperienceCompany>
             <ExperienceDate alignRight>
               <FaCalendarAlt /> 2024 - Present
             </ExperienceDate>
@@ -131,7 +143,7 @@ const Experiences = () => {
             <ExperienceTitle>Mapping Lead</ExperienceTitle>
             <ExperienceCompany>UofT Formula Racing</ExperienceCompany>
             <ExperienceDate>
-              <FaCalendarAlt /> 2023 - Present
+              <FaCalendarAlt /> 2023 - 2025
             </ExperienceDate>
           </ExperienceDetails>
           <TimelineCircle />
@@ -159,7 +171,6 @@ const Experiences = () => {
           <TimelineCircle />
         </TimelineItem>
       </Timeline>
-      {/* Render the Skills section below the timeline */}
       <Skills />
     </StyledExperiencesPage>
   );
